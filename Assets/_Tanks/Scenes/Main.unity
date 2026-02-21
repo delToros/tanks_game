@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.5943396, g: 0.3994147, b: 0.042052325, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -290,6 +290,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2317554334426770744, guid: a47bbcd379a3bc448a1a2ff78c0b287a, type: 3}
   m_PrefabInstance: {fileID: 161272697}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &187163528 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+  m_PrefabInstance: {fileID: 1414389733}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &664177598 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+  m_PrefabInstance: {fileID: 4694578960988072629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &720172638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -507,6 +517,130 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1560938245011325490, guid: 078a6fcb330cfb74b9c4d4a409b9a5c2, type: 3}
   m_PrefabInstance: {fileID: 926108438}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1135388569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135388571}
+  - component: {fileID: 1135388570}
+  m_Layer: 0
+  m_Name: CameraRig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1135388570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135388569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e26b621854da943aeca10c9a73880c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.CameraControl
+  m_DampTime: 0.2
+  m_ScreenEdgeBuffer: 4
+  m_MinSize: 6.5
+  m_Targets:
+  - {fileID: 664177598}
+  - {fileID: 187163528}
+--- !u!4 &1135388571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135388569}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1854371148}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1414389733
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.044
+      objectReference: {fileID: 0}
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.18139733
+      objectReference: {fileID: 0}
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9834099
+      objectReference: {fileID: 0}
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -159.098
+      objectReference: {fileID: 0}
+    - target: {fileID: 750673424507522234, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661751570099316249, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661751570099316249, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063162411208394718, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_Name
+      value: Tank 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887720820445926892, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_PlayerNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590917987013640872, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
 --- !u!1001 &1441656148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -708,6 +842,7 @@ GameObject:
   - component: {fileID: 1854371147}
   - component: {fileID: 1854371146}
   - component: {fileID: 1854371149}
+  - component: {fileID: 1854371150}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -732,8 +867,8 @@ Camera:
   m_GameObject: {fileID: 1854371145}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.7568628, g: 0.54509807, b: 0.37647063, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -787,7 +922,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1135388571}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1854371149
 MonoBehaviour:
@@ -833,6 +968,19 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1854371150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854371145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f8476b3d168454db7d4da34e34bd1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WebRequestForDirectionalLight
+  DirectionalLight: {fileID: 1807683370}
 --- !u!1001 &2057311656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -955,9 +1103,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2661751570099316249, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661751570099316249, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4063162411208394718, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
       propertyPath: m_Name
-      value: Tank
+      value: Tank 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590917987013640872, guid: 3d78a6d869f2af7469abe0c3d213fabd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -968,8 +1128,9 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1854371148}
   - {fileID: 1807683371}
   - {fileID: 161272697}
   - {fileID: 4694578960988072629}
+  - {fileID: 1414389733}
   - {fileID: 720172638}
+  - {fileID: 1135388571}
